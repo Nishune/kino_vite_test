@@ -191,7 +191,7 @@
     "Skådespelare": ["Auli'i Cravalho", " Dwayne Johnson", " Rachel House"],
     "Språk": "Engelska",
     "Längd": 107,
-    "Bild": "../img//Movieimg.png",
+    "Bild": "./img//Movieimg.png",
     "Label": "Kommande"
   }
 ]
