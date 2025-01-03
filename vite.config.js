@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite';
 
-export default defineConfig({
-  base: '/kino_vite_test/', // Ersätt med ditt repo-namn
+export default defineConfig(({ command }) => ({
+  base: command === 'serve' ? '/' : '/kino_vite_test/',
   css: {
     devSourcemap: true,
   },
-});
+}));
