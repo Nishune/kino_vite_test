@@ -5,6 +5,9 @@ async function loadJSON() {
 }
 
 export async function buildDoc() {
+  if (!document.querySelector('.info')) {
+    return;
+  }
   const data = await loadJSON();
   // DOM elements
   const modal = document.querySelector('.info-modal');

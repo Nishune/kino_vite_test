@@ -1,4 +1,4 @@
-async function fetchAboutJson() {
+export async function fetchAboutJson() {
   const res = await fetch('./data/about.json');
   const data = await res.json();
   return {
@@ -8,7 +8,7 @@ async function fetchAboutJson() {
   };
 }
 
-async function updateDomWithAboutJson() {
+export async function updateDomWithAboutJson() {
   const { mainHeadline, headline, aboutPage } = await fetchAboutJson();
 
   if (mainHeadline && headline && aboutPage) {
@@ -18,6 +18,9 @@ async function updateDomWithAboutJson() {
 
 function createSections(aboutData, pageHeadline, mainHeadline) {
   // Main headline
+  if (!document.querySelector('.about-page')) {
+    return;
+  }
   const mainHeadlineElement = document.querySelector('.about-main-header');
   const mainHeading = document.createElement('h1');
   mainHeading.textContent = mainHeadline;
