@@ -20,6 +20,6 @@ if (checkMovies) {
   loadMovieContent();
 }
 
-if (document.querySelector('.info')) {
+if (document.querySelector('.info') || document.querySelector('.info-modal')) {
   buildDoc();
 }

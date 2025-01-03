@@ -5,7 +5,8 @@ async function loadJSON() {
 }
 
 export async function buildDoc() {
-  if (!document.querySelector('.info')) {
+  const infoElement = document.querySelector('.info') || document.querySelector('.information');
+  if (!infoElement) {
     return;
   }
   const data = await loadJSON();
