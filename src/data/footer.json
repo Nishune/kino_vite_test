@@ -1,6 +1,6 @@
 {
   "footer": {
-    "logo": "/src/img/kinoLogo.png",
+    "logo": "./src/img/kinoLogo.png",
     "text": "Kino Bio",
     "sections": [
       {
@@ -16,17 +16,17 @@
         "title": "Sociala medier",
         "links": [
           {
-            "icon": "/src/img/instagramIcon.png",
+            "icon": "./src/img/instagramIcon.png",
             "text": "Följ oss på Instagram",
             "url": "#instagram"
           },
           {
-            "icon": "/src/img/facebookIcon.png",
+            "icon": "./src/img/facebookIcon.png",
             "name": "Följ oss på Facebook",
             "url": "#facebook"
           },
           {
-            "icon": "/src/img/tiktokIcon.png",
+            "icon": "./src/img/tiktokIcon.png",
             "name": "Följ oss på TikTok",
             "url": "#tiktok"
           }
